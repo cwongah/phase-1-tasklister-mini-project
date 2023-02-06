@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("form").addEventListener("submit", (e) => {
     e.preventDefault()
     createTask(newTaskDescription)
+    e.target.reset()
   })
 });
 
